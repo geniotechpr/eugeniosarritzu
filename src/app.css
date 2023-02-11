@@ -1,0 +1,9 @@
+/* Google fonts example */
+/* @import url('https://fonts.googleapis.com/css?family=Unbounded:400,700&display=swap'); */
+
+/* Inter font family - https://rsms.me/inter/samples/ */
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
