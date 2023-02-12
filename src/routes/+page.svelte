@@ -1,36 +1,27 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+  import welcome from '$lib/images/svelte-welcome.webp';
+  import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+  <title>Home</title>
+  <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+  <h1>
+    <span class="welcome">
+      <picture>
+        <source srcset={welcome} type="image/webp" />
+        <img src={welcome_fallback} alt="Welcome" />
+      </picture>
+    </span>
 
-		to your new<br />SvelteKit app
-	</h1>
+    to your new<br />SvelteKit app
+  </h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-	<h2>Hello World!</h2>
-
-	<Counter />
+  <h2>
+    try editing <strong>src/routes/+page.svelte</strong>
+  </h2>
+  <h2>Hello World!</h2>
 </section>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.yellow.100);
-	}
-</style>
