@@ -17,11 +17,10 @@
   <div class="flex justify-center sm:px-8">
     <div class="flex w-full max-w-7xl lg:px-8">
       <div class="mx-auto mt-8 flex w-full flex-col px-5 md:mt-10 md:px-8 lg:mt-12 lg:max-w-6xl lg:px-16">
-        <!-- This is the highest in the stack (z-index) -->
+        <!-- This component contains the mobile nav elements that are higher in the z-index. (modal & blurred effect) -->
         <Header />
 
-        <!-- This is the second lowest in the stack (z-index). Between background & header. -->
-        <main class="relative -z-10 my-16 flex flex-col">
+        <main class="relative my-16 flex flex-col">
           <div class="text-zinc-800 dark:text-zinc-300">
             <slot />
           </div>
@@ -30,6 +29,5 @@
     </div>
   </div>
 
-  <!-- Just the footer - second lowest in the stack as well (z-index). Equivalent value to main section. -->
   <Footer />
 </div>

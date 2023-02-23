@@ -137,12 +137,12 @@
     <!-- Mobile Menu Starts  -->
     {#if showMobileMenu}
       <!-- This is the blur section for mobile menu. -->
-      <div class="fixed inset-0 w-screen bg-zinc-800/40 backdrop-blur dark:bg-black/60" aria-hidden="true" />
+      <div class="fixed inset-0 z-10 w-screen bg-zinc-800/40 backdrop-blur dark:bg-black/60" aria-hidden="true" />
       <div
         use:menu.items
         in:fly={{ duration: 400, x: 0, y: 50, opacity: 0.5, easing: quintOut }}
         out:fly={{ duration: 300, x: 0, y: 50, opacity: 0.5, easing: quintIn }}
-        class="fixed inset-x-3 top-6 origin-top rounded-2xl bg-white px-6 pb-6 pt-12 text-base font-medium text-zinc-800 ring-1 ring-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:ring-zinc-500/20 xs:hidden"
+        class="fixed inset-x-3 top-6 z-20 origin-top rounded-2xl bg-white px-6 pb-6 pt-12 text-base font-medium text-zinc-800 ring-1 ring-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:ring-zinc-500/20 xs:hidden"
         tabindex="-1"
       >
         <div class="flex flex-col">

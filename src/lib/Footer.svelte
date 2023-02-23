@@ -26,7 +26,7 @@
   ];
 </script>
 
-<footer class="relative -z-10 flex justify-center sm:px-8">
+<footer class="relative flex justify-center sm:px-8">
   <div class="flex w-full max-w-7xl lg:px-8">
     <div class="flex w-full justify-center border-t border-zinc-100 dark:border-zinc-700/40">
       <div class="mb-8 flex flex-col md:mb-10 lg:mb-16">
