@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>About · Eugenio Sarritzu Abreu</title>
+  <title>Blog · Eugenio Sarritzu Abreu</title>
 
   <!-- TODO: update this -->
 
@@ -7,5 +7,5 @@
 </svelte:head>
 
 <div class="text-column">
-  <h1>This is the about page.</h1>
+  <h1>This is the Blog page.</h1>
 </div>

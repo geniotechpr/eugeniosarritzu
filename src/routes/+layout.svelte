@@ -1,53 +1,35 @@
 <script>
-  import Header from '#/lib/Header.svelte';
   import '#/app.css';
+  import Header from '#/lib/Header.svelte';
+  import Footer from '#/lib/Footer.svelte';
 </script>
 
-<div class="app">
-  <Header />
-
-  <main>
-    <slot />
-  </main>
-
-  <footer>
-    <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-  </footer>
+<!-- Set main container area and its background color. This is the lowest in the stack (z-index) -->
+<div class="fixed inset-0 -z-50 flex justify-center sm:px-8">
+  <div class="flex w-full max-w-7xl lg:px-8">
+    <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
+  </div>
 </div>
 
-<style>
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+<!-- Main layout -->
+<div class="flex w-full flex-col justify-center">
+  <!-- Header and main content controlled by same div(s) for spacing and alignment -->
+  <div class="flex justify-center sm:px-8">
+    <div class="flex w-full max-w-7xl lg:px-8">
+      <div class="mx-auto mt-8 flex w-full flex-col px-5 md:mt-10 md:px-8 lg:mt-12 lg:max-w-6xl lg:px-16">
+        <!-- This is the highest in the stack (z-index) -->
+        <Header />
 
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    max-width: 64rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
+        <!-- This is the second lowest in the stack (z-index). Between background & header. -->
+        <main class="relative -z-10 my-16 flex flex-col">
+          <div class="text-zinc-800 dark:text-zinc-300">
+            <slot />
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
 
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-  }
-
-  footer a {
-    font-weight: bold;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 12px 0;
-    }
-  }
-</style>
+  <!-- Just the footer - second lowest in the stack as well (z-index). Equivalent value to main section. -->
+  <Footer />
+</div>

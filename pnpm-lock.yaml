@@ -19,11 +19,15 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.2
   svelte: ^3.54.0
   svelte-check: ^3.0.1
+  svelte-headlessui: ^0.0.14
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
   typescript: ^4.9.3
   vite: ^4.0.0
   vitest: ^0.25.3
+
+dependencies:
+  svelte-headlessui: 0.0.14
 
 devDependencies:
   '@fontsource/fira-mono': 4.5.10
@@ -1911,6 +1915,12 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-headlessui/0.0.14:
+    resolution: {integrity: sha512-w2Sqj/xqmrUi5XtVXUeSh3lJUAUgpVSpA5ApnmLmFE+S16nk8XRsQof6Inj0Lrc+Qe91AnaDXGQxijuKZg4Vfg==}
+    dependencies:
+      svelte-transition: 0.0.7
+    dev: false
+
   /svelte-hmr/0.15.1_svelte@3.55.1:
     resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -1968,6 +1978,10 @@ packages:
       svelte: 3.55.1
       typescript: 4.9.4
     dev: true
+
+  /svelte-transition/0.0.7:
+    resolution: {integrity: sha512-YMbl+eIkzeYKBz6E/I8KI8RMezhqB38t2B/Mx8BotmtiN+5wnKath7CWDc+8U9zKGJ/iUYHmx4MwQjIzo05nVg==}
+    dev: false
 
   /svelte/3.55.1:
     resolution: {integrity: sha512-S+87/P0Ve67HxKkEV23iCdAh/SX1xiSfjF1HOglno/YTbSTW7RniICMCofWGdJJbdjw3S+0PfFb1JtGfTXE0oQ==}

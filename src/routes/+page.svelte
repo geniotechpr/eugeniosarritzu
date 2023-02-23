@@ -4,24 +4,15 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Home · Eugenio Sarritzu Abreu</title>
+
+  <!-- TODO: update this -->
+
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <section>
   <h1>
-    <span class="welcome">
-      <picture>
-        <source srcset={welcome} type="image/webp" />
-        <img src={welcome_fallback} alt="Welcome" />
-      </picture>
-    </span>
-
-    to your new<br />SvelteKit app
+    <h2>Software Engineer, Curious learner, resourceful maker, boricua.</h2>
   </h1>
-
-  <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
-  </h2>
-  <h2>Hello World!</h2>
 </section>
