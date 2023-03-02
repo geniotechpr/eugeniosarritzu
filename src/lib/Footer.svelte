@@ -26,7 +26,7 @@
   ];
 </script>
 
-<footer class="relative flex justify-center sm:px-8">
+<footer id="contact" class="relative flex justify-center sm:px-8">
   <div class="flex w-full max-w-7xl lg:px-8">
     <div class="flex w-full justify-center border-t border-zinc-100 dark:border-zinc-700/40">
       <div class="mb-8 flex flex-col md:mb-10 lg:mb-16">
@@ -34,8 +34,8 @@
           <img alt="Eugenio" src={eugenio} decoding="async" class="mx-auto h-[4.75rem] w-[4.75rem] rounded-full" />
         </div>
         <span class="mx-auto text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-300">Eugenio Sarritzu Abreu</span>
-        <span class="mx-auto mb-8 text-base text-zinc-600 dark:text-zinc-400">@geniotechpr</span>
-        <div class="mb-2 flex justify-between px-1">
+        <span class="mx-auto text-base text-zinc-600 dark:text-zinc-400">@geniotechpr</span>
+        <div class="mt-8 mb-2 flex justify-between px-1">
           {#each socials as social}
             <a
               class="relative block px-3 py-2 transition hover:text-sky-500 dark:hover:text-sky-400"

@@ -20,7 +20,7 @@
         <!-- This component contains the mobile nav elements that are higher in the z-index. (modal & blurred effect) -->
         <Header />
 
-        <main class="relative my-16 flex flex-col">
+        <main class="relative mb-16 flex flex-col">
           <div class="text-zinc-800 dark:text-zinc-300">
             <slot />
           </div>

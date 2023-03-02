@@ -13,10 +13,6 @@
   }
   const routes: Route[] = [
     {
-      name: 'Projects',
-      href: '/projects'
-    },
-    {
       name: 'Products',
       href: '/products'
     },
@@ -27,6 +23,10 @@
     {
       name: 'About',
       href: '/about'
+    },
+    {
+      name: 'Contact',
+      href: '#contact'
     }
   ];
 
@@ -90,7 +90,7 @@
 
 <header class="relative flex flex-col">
   <!-- Navigation bar -->
-  <div class="top-0 h-16">
+  <div class="top-0 z-10 h-16">
     <div class="flex justify-between">
       <div
         class="flex h-12 w-12 justify-around rounded-full bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition hover:ring-zinc-200 dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"

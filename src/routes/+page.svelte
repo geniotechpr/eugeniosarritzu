@@ -1,4 +1,6 @@
 <script>
+  import HomeHeader from '#/lib/HomeHeader.svelte';
+  import eugenio from '#/lib/images/eugenioFooter.png';
 </script>
 
 <svelte:head>
@@ -10,7 +12,5 @@
 </svelte:head>
 
 <section>
-  <h1>
-    <h2>Software Engineer, Curious learner, resourceful maker, boricua.</h2>
-  </h1>
+  <HomeHeader />
 </section>
