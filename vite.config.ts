@@ -9,6 +9,16 @@ const config: ViteConfig & VitestConfig = {
   },
   test: {
     include: ['src/**/*.{test,spec}.{js,ts}']
+  },
+  server: {
+    proxy: {
+      // with options: http://localhost:5173/api/bar-> http://jsonplaceholder.typicode.com/bar
+      '/api-hello': {
+        target: 'https://python-api-psi.vercel.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api-hello/, '')
+      }
+    }
   }
 };
 
