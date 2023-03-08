@@ -23,5 +23,5 @@
 {#await getData()}
   <p>Loading...</p>
 {:then data}
-  <p>{data.message}</p>
+  <p>{JSON.stringify(data)}</p>
 {/await}
