@@ -1,11 +1,13 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { Rive, Layout, Fit, Alignment } from '@rive-app/canvas';
   import { fly } from 'svelte/transition';
+  import ThrelteScene from '#/lib/ThrelteScene.svelte';
+  //import { Rive, Layout, Fit, Alignment } from '@rive-app/canvas';
 
+  /**
   // Rive Animation
   let canvas: HTMLCanvasElement;
-  let rive: Rive;
+  let rive: Rive; */
 
   // Text Animation
   const adjectives = ['Software Developer', 'Curious Learner', 'Resourceful Maker', 'Boricua'];
@@ -53,23 +55,26 @@
 
   // On Component Mount, set up animations and return cleanup function for unmount
   onMount(() => {
+    /**
     rive = new Rive({
       src: './src/lib/images/coder.riv',
       canvas: canvas,
       layout: new Layout({ fit: Fit.Contain, alignment: Alignment.Center }),
       autoplay: true
-    });
+    }); */
     adjective = adjectives[adjectiveIndex];
     initiateTransitionIntro = true;
+    /**
     return () => {
       rive.cleanup();
-    };
+    }; */
   });
 </script>
 
 <div class="flex justify-center">
   <div class="flex flex-col justify-center">
-    <canvas class="mx-auto h-52 w-auto xs:h-72 md:h-96" width="1400" height="1000" bind:this={canvas} />
+    <!--<canvas class="mx-auto h-52 w-auto xs:h-72 md:h-96" width="1400" height="1000" bind:this={canvas} /> -->
+    <div><ThrelteScene /></div>
     <span class="mx-auto text-base font-medium tracking-tight text-zinc-800 dark:text-zinc-300">
       Hello! I'm Eugenio, a
       {#each adjectives as adj}

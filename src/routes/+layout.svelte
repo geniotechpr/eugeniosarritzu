@@ -16,7 +16,7 @@
   <!-- Header and main content controlled by same div(s) for spacing and alignment -->
   <div class="flex justify-center sm:px-8">
     <div class="flex w-full max-w-7xl lg:px-8">
-      <div class="mx-auto mt-8 flex w-full flex-col px-5 md:mt-10 md:px-8 lg:mt-12 lg:max-w-6xl lg:px-16">
+      <div class="mx-auto mt-6 flex w-full flex-col px-5 md:mt-10 md:px-8 lg:mt-12 lg:max-w-6xl lg:px-16">
         <!-- This component contains the mobile nav elements that are higher in the z-index. (modal & blurred effect) -->
         <Header />
 

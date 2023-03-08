@@ -1,5 +1,5 @@
 <script lang="ts">
-  import eugenio from '#/lib/images/eugenioFooter.png';
+  import eugenio from '#/lib/images/eugenio.png';
   import SocialMediaLogos from '#/lib/logos/SocialMediaLogos.svelte';
 
   interface Social {

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import eugenio from '#/lib/images/eugenioLogo.png';
+  import eugenio from '#/lib/images/eugenio.png';
   import OutlineIcons from './heroicons/OutlineIcons.svelte';
   import { onMount } from 'svelte';
   import { createMenu } from 'svelte-headlessui';

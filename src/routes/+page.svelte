@@ -1,6 +1,5 @@
 <script>
   import HomeHeader from '#/lib/HomeHeader.svelte';
-  import eugenio from '#/lib/images/eugenioFooter.png';
 </script>
 
 <svelte:head>
