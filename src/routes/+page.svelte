@@ -1,5 +1,11 @@
 <script>
   import HomeHeader from '#/lib/HomeHeader.svelte';
+
+  async function getData() {
+    const response = await fetch('/api-hello');
+    const data = await response.json();
+    return data;
+  }
 </script>
 
 <svelte:head>
@@ -13,3 +19,9 @@
 <section>
   <HomeHeader />
 </section>
+
+{#await getData()}
+  <p>Loading...</p>
+{:then data}
+  <p>{data.message}</p>
+{/await}
