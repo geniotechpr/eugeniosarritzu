@@ -1,21 +1,47 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
   import ThrelteScene from '#/lib/ThrelteScene.svelte';
-  //import { Rive, Layout, Fit, Alignment } from '@rive-app/canvas';
+  import { fly } from 'svelte/transition';
+  import { sineIn } from 'svelte/easing';
 
-  /**
-  // Rive Animation
-  let canvas: HTMLCanvasElement;
-  let rive: Rive; */
+  //Component animation on load
+  let isComponentLoaded = false;
 
-  // Text Animation
-  const adjectives = ['Software Developer', 'Curious Learner', 'Resourceful Maker', 'Boricua'];
+  // Set up flags
   let adjectiveIndex = 0;
   let adjective: string = '';
   $: currentAdjective = adjective;
   let initiateTransitionIntro = false;
   let isEmojiVisible = false;
+  let isHelloTextVisible = false;
+
+  // Text Animation
+  interface Adjective {
+    id: string;
+    emoji: string;
+  }
+  const adjectives: Adjective[] = [
+    {
+      id: 'Solutions Consultant',
+      emoji: '🕵🏻'
+    },
+    {
+      id: 'Software Developer',
+      emoji: '👨🏻‍💻'
+    },
+    {
+      id: 'Curious Maker',
+      emoji: '🛠️'
+    },
+    {
+      id: 'Boricua',
+      emoji: '🇵🇷'
+    }
+  ];
+
+  function makeHelloTextVisible() {
+    isHelloTextVisible = true;
+  }
 
   function outroStart() {
     isEmojiVisible = false;
@@ -23,7 +49,7 @@
 
   function outroEnd() {
     adjectiveIndex = (adjectiveIndex + 1) % adjectives.length;
-    adjective = adjectives[adjectiveIndex];
+    adjective = adjectives[adjectiveIndex].id;
     initiateTransitionIntro = true;
   }
 
@@ -49,40 +75,50 @@
       tick: (t: number) => {
         const i = Math.trunc(text.length * t);
         node.textContent = text.slice(0, i);
-      }
+      },
+      stop
     };
   }
 
   // On Component Mount, set up animations and return cleanup function for unmount
   onMount(() => {
-    /**
-    rive = new Rive({
-      src: './src/lib/images/coder.riv',
-      canvas: canvas,
-      layout: new Layout({ fit: Fit.Contain, alignment: Alignment.Center }),
-      autoplay: true
-    }); */
-    adjective = adjectives[adjectiveIndex];
+    isComponentLoaded = true;
+    adjective = adjectives[adjectiveIndex].id;
     initiateTransitionIntro = true;
-    /**
+
     return () => {
-      rive.cleanup();
-    }; */
+      initiateTransitionIntro = false;
+    };
   });
 </script>
 
-<div class="flex justify-center">
-  <div class="flex flex-col justify-center">
-    <!--<canvas class="mx-auto h-52 w-auto xs:h-72 md:h-96" width="1400" height="1000" bind:this={canvas} /> -->
-    <div><ThrelteScene /></div>
-    <span class="mx-auto text-base font-medium tracking-tight text-zinc-800 dark:text-zinc-300">
-      Hello! I'm Eugenio, a
-      {#each adjectives as adj}
-        {#if initiateTransitionIntro && currentAdjective === adj}
-          <p transition:typewriter={{ delay: 1000 }} on:introend={introEnd} on:outrostart={outroStart} on:outroend={outroEnd}>{adj}</p>
-        {/if}
-      {/each}
-      {#if isEmojiVisible && currentAdjective === 'Boricua'}<span out:fly={{ delay: 900 }}>🇵🇷</span>{/if}
-    </span>
+{#key isComponentLoaded}
+  <div class="flex justify-center" in:fly={{ delay: 150, duration: 200, x: 0, y: 50, opacity: 0, easing: sineIn }} on:introstart={makeHelloTextVisible}>
+    <div class="flex flex-col justify-center">
+      <div class="relative mt-2 h-12 w-full xs:mt-4">
+        <div class="absolute inset-x-0 top-0">
+          <div class="flex justify-around">
+            <h1 class="mx-auto flex text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-300 md:text-3xl">
+              {#each adjectives as adj}
+                {#if initiateTransitionIntro && currentAdjective === adj.id}
+                  <p in:typewriter={{ delay: 250 }} out:fly={{ delay: 1500 }} on:introend={introEnd} on:outrostart={outroStart} on:outroend={outroEnd}>
+                    {adj.id}
+                  </p>
+                {/if}
+                {#if isEmojiVisible && currentAdjective === adj.id}<span class="ml-1" out:fly={{ delay: 1500 }}>{adj.emoji}</span>{/if}
+              {/each}
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div><ThrelteScene /></div>
+      {#if isHelloTextVisible}
+        <div class="mt-6 flex justify-around rounded bg-zinc-200/30 shadow-lg shadow-zinc-800/5 dark:bg-zinc-800/75">
+          <span class=" mx-auto text-sm font-medium tracking-tight text-zinc-600 dark:text-zinc-400 xs:text-base">
+            Hello! I'm Eugenio. Based in Raleigh, NC.
+          </span>
+        </div>
+      {/if}
+    </div>
   </div>
-</div>
+{/key}

@@ -21,7 +21,7 @@
     },
     {
       name: 'repl',
-      href: '/about'
+      href: 'https://replit.com/@geniotechpr'
     }
   ];
 </script>

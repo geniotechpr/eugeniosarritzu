@@ -13,8 +13,8 @@
   }
   const routes: Route[] = [
     {
-      name: 'Products',
-      href: '/products'
+      name: 'Projects',
+      href: '/projects'
     },
     {
       name: 'Blog',
@@ -48,6 +48,7 @@
     // listen for changes so we auto-adjust based on system settings
     const matcher = window.matchMedia('(prefers-color-scheme: dark)');
     matcher.addEventListener('change', handleChange);
+
     return () => matcher.removeEventListener('change', handleChange);
   });
   function handleChange({ matches: dark }: MediaQueryListEvent) {

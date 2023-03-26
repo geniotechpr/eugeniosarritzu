@@ -1,27 +1,35 @@
 <script lang="ts">
   import * as Threlte from '@threlte/core';
   import * as Three from 'three';
-  import test from '#/lib/images/mid-test.png';
+  import imageForMap from '#/lib/images/eu-reina-home.png';
+  import { DisposableObject, useTexture } from '@threlte/core';
+  import { MeshStandardMaterial } from 'three';
+
+  // Build texture, material, and geometry
+  const map = useTexture(imageForMap);
+  const material = new Three.MeshStandardMaterial({
+    map: map,
+    blending: Three.CustomBlending,
+    blendEquation: Three.AddEquation, //default
+    blendSrc: Three.SrcColorFactor,
+    blendDst: Three.SrcColorFactor,
+    color: 'white'
+  });
+  const geometry = new Three.BoxGeometry(10, 10, 10);
 </script>
 
-<div class="mx-auto flex h-36 max-w-xs xs:h-48">
+<div class="mx-auto flex h-36 max-w-xs xs:h-60 xs:max-w-sm">
   <Threlte.Canvas>
     <!-- Camera -->
-    <Threlte.PerspectiveCamera position={{ x: 20, y: 10, z: 20 }} fov={30}>
+    <Threlte.PerspectiveCamera position={{ x: 20, y: 8, z: 20 }} fov={30}>
       <!-- Controls -->
       <Threlte.OrbitControls autoRotate />
     </Threlte.PerspectiveCamera>
 
     <!-- Lights the scene equally -->
-    <Threlte.AmbientLight color="white" intensity={0.6} />
+    <Threlte.AmbientLight color="rgb(255,247,230)" intensity={1.1} />
 
-    <!-- Sphere -->
-    <Threlte.Mesh
-      geometry={new Three.BoxGeometry(10, 10, 10)}
-      material={new Three.MeshStandardMaterial({ transparent: false, map: new Three.TextureLoader().load(test) })}
-      position={{ y: 0.5 }}
-      receiveShadow
-      castShadow
-    />
+    <!-- Cube -->
+    <Threlte.Mesh {geometry} {material} position={{ y: 0.5 }} receiveShadow castShadow />
   </Threlte.Canvas>
 </div>
