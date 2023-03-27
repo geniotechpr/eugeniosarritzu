@@ -1,5 +1,6 @@
 <script>
   import HomeHeader from '#/lib/HomeHeader.svelte';
+  import HomePreview from '#/lib/HomePreview.svelte';
 
   /**
    * Example of calling an API endpoint hosted on a Vercel serverless function (python in this)
@@ -21,10 +22,10 @@
 </svelte:head>
 
 <!-- TODO: Use Tailwind UI component to highligh 2-3 blog posts & 2-3 projects in the homepage when you have that ready. -->
-<div>
+<div class="flex-col">
   <HomeHeader />
+  <HomePreview />
 </div>
-<div class="mt-12 text-center"><span>Maybe add a small intro message here & the tech stack / skills used to build this site.</span></div>
 
 <!-- Example of using await block to make api call via getData() -->
 <!--

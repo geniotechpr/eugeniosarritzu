@@ -118,6 +118,9 @@
             Hello! I'm Eugenio. Based in Raleigh, NC.
           </span>
         </div>
+        <div class="mt-6 flex justify-center gap-x-6">
+          <a href="/about" class="text-base font-semibold leading-6 text-zinc-800 dark:text-zinc-300">Learn more <span aria-hidden="true">→</span></a>
+        </div>
       {/if}
     </div>
   </div>

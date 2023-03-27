@@ -35,12 +35,12 @@
     </span>
     <ul>
       <li>1. <span class="font-medium underline">This site</span>: continue developing my personal site & begin writing online in a blog format.</li>
-      <li>2. <span class="font-medium underline">ResumeGPT</span>: my resume & professional background with a ChatGPT-type interface.</li>
+      <li>2. <span class="font-medium underline">ChatCV</span>: chat with my resume & CV in a ChatGPT-type interface.</li>
       <li>
-        3. <span class="font-medium underline">PuertoRico.ai</span>: allow people to explore the culture, history, and nuances of our incredible island using
+        3. <span class="font-medium underline">PuertoRico.ai</span>: allow people to explore the culture, history, and places of our incredible island using
         text-to-image and large language models.
       </li>
-      <li>4. <span class="font-medium underline">Teaching</span>: develop a content strategy to help others learn.</li>
+      <li>4. <span class="font-medium underline">Teaching</span>: develop ways to help others learn.</li>
     </ul>
   </div>
 </div>

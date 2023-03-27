@@ -35,7 +35,7 @@
         </div>
         <span class="mx-auto text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-300">Eugenio Sarritzu Abreu</span>
         <span class="mx-auto text-base text-zinc-600 dark:text-zinc-400">@geniotechpr</span>
-        <div class="mt-8 mb-2 flex justify-between px-1">
+        <div class="my-8 flex justify-between px-1">
           {#each socials as social}
             <a
               class="relative block px-3 py-2 transition hover:text-sky-500 dark:hover:text-sky-400"
@@ -47,12 +47,6 @@
             </a>
           {/each}
         </div>
-        <a
-          class="mx-auto mb-5 text-base text-zinc-600 hover:text-sky-400 hover:underline dark:text-zinc-400 dark:hover:text-sky-500"
-          href="mailto:hey@eugeniosarritzu.com"
-        >
-          hey@eugeniosarritzu.com
-        </a>
         <span class="mx-auto text-xs font-medium text-zinc-600 dark:text-zinc-400">© 2023 ESA</span>
       </div>
     </div>

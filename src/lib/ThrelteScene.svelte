@@ -2,8 +2,7 @@
   import * as Threlte from '@threlte/core';
   import * as Three from 'three';
   import imageForMap from '#/lib/images/eu-reina-home.png';
-  import { DisposableObject, useTexture } from '@threlte/core';
-  import { MeshStandardMaterial } from 'three';
+  import { useTexture } from '@threlte/core';
 
   // Build texture, material, and geometry
   const map = useTexture(imageForMap);
