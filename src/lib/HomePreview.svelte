@@ -5,16 +5,10 @@
   import blogPreview from '#/lib/images/blog-preview.jpg';
   import chatGPT from '#/lib/images/chatGPT.jpg';
   import puertorico from '#/lib/images/puertorico.jpg';
+  import type { Preview } from '#/lib/types/custom-types';
 
   //Component animation on load
   let isComponentLoaded = false;
-
-  interface Preview {
-    imgSource: string;
-    title: string;
-    description: string;
-    labelClass: string;
-  }
 
   // Generate a list of previews
   const previews: Preview[] = [

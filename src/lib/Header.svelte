@@ -5,12 +5,9 @@
   import { createMenu } from 'svelte-headlessui';
   import { fly } from 'svelte/transition';
   import { quintOut, quintIn } from 'svelte/easing';
+  import type { Route } from '#/lib/types/custom-types';
 
   // Define routes for navigation menu
-  interface Route {
-    name: string;
-    href: string;
-  }
   const routes: Route[] = [
     {
       name: 'Projects',

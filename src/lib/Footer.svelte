@@ -1,11 +1,8 @@
 <script lang="ts">
   import eugenio from '#/lib/images/eugenio.png';
   import SocialMediaLogos from '#/lib/logos/SocialMediaLogos.svelte';
+  import type { Social } from '#/lib/types/custom-types';
 
-  interface Social {
-    name: string;
-    href: string;
-  }
   const socials: Social[] = [
     {
       name: 'twitter',

@@ -3,6 +3,7 @@
   import ThrelteScene from '#/lib/ThrelteScene.svelte';
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
+  import type { Adjective } from '#/lib/types/custom-types';
 
   //Component animation on load
   let isComponentLoaded = false;
@@ -16,10 +17,6 @@
   let isHelloTextVisible = false;
 
   // Text Animation
-  interface Adjective {
-    id: string;
-    emoji: string;
-  }
   const adjectives: Adjective[] = [
     {
       id: 'Solutions Consultant',
