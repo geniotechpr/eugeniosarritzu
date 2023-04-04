@@ -13,16 +13,16 @@
   // Generate a list of previews
   const previews: Preview[] = [
     {
-      imgSource: blogPreview,
-      title: 'Blog',
-      description: "A place to share my perspective on things I've learned.",
-      labelClass: 'absolute bottom-0 left-0 rounded-md bg-indigo-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
-    },
-    {
       imgSource: chatGPT,
       title: 'ChatCV',
       description: 'Chat with my resume & CV in a ChatGPT-type interface.',
       labelClass: 'absolute bottom-0 left-0 rounded-md bg-pink-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
+    },
+    {
+      imgSource: blogPreview,
+      title: 'Personal Assistant',
+      description: 'Provide Docs to GPT-4 to build side projects faster.',
+      labelClass: 'absolute bottom-0 left-0 rounded-md bg-indigo-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
     },
     {
       imgSource: puertorico,

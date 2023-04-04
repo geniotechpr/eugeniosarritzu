@@ -1,13 +1,14 @@
 <script lang="ts">
   import reinaMeme from '#/lib/images/eu-reina-blog.png';
+  import eugenio from '#/lib/images/eugenio.png';
 </script>
 
 <svelte:head>
   <title>Blog · Eugenio Sarritzu Abreu</title>
-
-  <!-- TODO: update this -->
-
-  <meta name="description" content="About this app" />
+  <meta name="description" content="A personal space to write online." />
+  <meta property="og:title" content="Eugenio Sarritzu" />
+  <meta property="og:description" content="Solutions Consultant & Software Developer." />
+  <meta property="og:image" content={eugenio} />
 </svelte:head>
 
 <div class="relative flex w-full">

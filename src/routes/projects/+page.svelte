@@ -1,13 +1,14 @@
 <script lang="ts">
   import eugenioReina from '#/lib/images/eu-reina-laptop.png';
+  import eugenio from '#/lib/images/eugenio.png';
 </script>
 
 <svelte:head>
   <title>Projects · Eugenio Sarritzu Abreu</title>
-
-  <!-- TODO: update this -->
-
-  <meta name="description" content="Svelte demo app" />
+  <meta name="description" content="Portfolio of projects." />
+  <meta property="og:title" content="Eugenio Sarritzu" />
+  <meta property="og:description" content="Solutions Consultant & Software Developer." />
+  <meta property="og:image" content={eugenio} />
 </svelte:head>
 
 <div class="relative flex w-full">
@@ -35,10 +36,14 @@
         <li>1. <span class="font-medium underline">This site</span>: continue developing my personal site & begin writing online in a blog format.</li>
         <li>2. <span class="font-medium underline">ChatCV</span>: chat with my resume & CV in a ChatGPT-type interface.</li>
         <li>
-          3. <span class="font-medium underline">PuertoRico.ai</span>: allow people to explore the culture, history, and places of our incredible island using
+          3. <span class="font-medium underline">Personal Assistant</span>: create a GPT-4 based personal assistant that has up to date information about my
+          technology stack of choice (e.g. Svelte, SvelteKit, TailwindCSS, ,TypeScript, etc.) to help me build side projects faster.
+        </li>
+        <li>
+          4. <span class="font-medium underline">PuertoRico.ai</span>: allow people to explore the culture, history, and places of our incredible island using
           text-to-image and large language models.
         </li>
-        <li>4. <span class="font-medium underline">Teaching</span>: develop ways to help others learn.</li>
+        <li>5. <span class="font-medium underline">Teaching</span>: develop ways to help others learn.</li>
       </ul>
     </span>
   </div>

@@ -1,34 +1,40 @@
 <script>
   import HomeHeader from '#/lib/HomeHeader.svelte';
   import HomePreview from '#/lib/HomePreview.svelte';
-
-  /**
-   * Example of calling an API endpoint hosted on a Vercel serverless function (python in this)
-   * 
-  async function getData() {
-    const response = await fetch('/api-hello');
-    const data = await response.text();
-    console.log(data);
-    return data;
-  } */
+  import eugenio from '#/lib/images/eugenio.png';
 </script>
 
 <svelte:head>
   <title>Home · Eugenio Sarritzu Abreu</title>
-
-  <!-- TODO: update this -->
-
-  <meta name="description" content="Svelte demo app" />
+  <meta name="description" content="Solutions Consultant & Software Developer." />
+  <meta property="og:title" content="Eugenio Sarritzu" />
+  <meta property="og:description" content="Solutions Consultant & Software Developer." />
+  <meta property="og:image" content={eugenio} />
 </svelte:head>
 
-<!-- TODO: Use Tailwind UI component to highligh 2-3 blog posts & 2-3 projects in the homepage when you have that ready. -->
 <div class="flex-col">
   <HomeHeader />
   <HomePreview />
 </div>
 
-<!-- Example of using await block to make api call via getData() -->
 <!--
+  /**
+   * Example of calling an API endpoint hosted on a Vercel serverless function (python in this case, deployed in a separate project/repo) after 
+   * setting it up in vercel.json config file. To see an example of the previously configured vercel.json file, see previous commits. Also 
+   * relevant for this to work is vite.config.js file, which is configured to proxy requests to /api-hello to the vercel serverless function.
+   * See previous commits for an example as well. 
+   *
+   * Note that this function belongs in the <script> tag, not here. 
+   *
+   *  
+  async function getData() {
+    const response = await fetch('/api-hello');
+    const data = await response.text();
+    console.log(data);
+    return data;
+  } */ -->
+
+<!-- Example of using await block to make api call via getData() 
 {#await getData()}
   <p>Loading...</p>
 {:then data}
