@@ -27,6 +27,7 @@ Last but not least, these learning resources were of great help while building t
 - [Joy Of Code](https://joyofcode.xyz/)
 - [New Svelte Interactive Tutorial](https://learn.svelte.dev/tutorial/welcome-to-svelte)
 - [Original Svelte Interactive Tutorial](https://svelte.dev/tutorial/basics)
+- [Vercel's Next.js Start Learning Guide](https://nextjs.org/learn/foundations/about-nextjs)
 
 ## TODO
 
