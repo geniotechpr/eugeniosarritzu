@@ -31,7 +31,7 @@
       date: 'October 2022 - Present',
       title: 'Technical Solutions Consultant',
       description:
-        'I work with clients to understand their business problems and build PoC or MVP projects based on their needs with the goal of demonstrating the value of process automation built on the ProcessMaker platform.'
+        'I work with prospects to understand their business problems and build PoC or MVP projects based on their needs with the goal of demonstrating the value of process automation built on the ProcessMaker platform.'
     }
   ];
 
@@ -76,13 +76,7 @@
     <span class="text-leftt mb-6 flex text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-300">Collaboration</span>
     <span class="mb-8 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
       I'm open to collaborating on interesting projects or ideas. If you have a project that you'd like to discuss, please send me a direct message via <span
-        class="text-sky-500 hover:text-sky-800"
-      >
-        <a href="https://twitter.com/geniotechpr" target="_blank" rel="noopener noreferrer">Twitter</a>
-      </span>
-      or
-      <span class="text-sky-500 hover:text-sky-800"
-        ><a href="https://www.linkedin.com/in/geniotechpr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span
+        class="text-sky-500 hover:text-sky-800"><a href="https://www.linkedin.com/in/geniotechpr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span
       >.
     </span>
     <span class="text-leftt mb-6 flex text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-300">Technology Stack</span>

@@ -5,10 +5,6 @@
 
   const socials: Social[] = [
     {
-      name: 'twitter',
-      href: 'https://twitter.com/geniotechpr'
-    },
-    {
       name: 'linkedin',
       href: 'https://www.linkedin.com/in/geniotechpr/'
     },
@@ -32,7 +28,7 @@
         </div>
         <span class="mx-auto text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-300">Eugenio Sarritzu Abreu</span>
         <span class="mx-auto text-base text-zinc-600 dark:text-zinc-400">@geniotechpr</span>
-        <div class="my-8 flex justify-between px-1">
+        <div class="my-8 flex justify-between px-12">
           {#each socials as social}
             <a
               class="relative block px-3 py-2 transition hover:text-sky-500 dark:hover:text-sky-400"
