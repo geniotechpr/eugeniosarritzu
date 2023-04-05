@@ -4,6 +4,7 @@
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
   import type { Adjective } from '#/lib/types/custom-types';
+  import OutlineIcons from '#/lib/heroicons/OutlineIcons.svelte';
 
   //Component animation on load
   let isComponentLoaded = false;
@@ -89,7 +90,9 @@
 </script>
 
 {#if !isComponentLoaded}
-  <div>...Loading</div>
+  <div class="mt-36 flex justify-center">
+    <OutlineIcons icon="cube-transparent" classValue="h-16 w-16 fill-zinc-900 transition dark:fill-zinc-300 animate-spin" />
+  </div>
 {/if}
 
 {#key isComponentLoaded}

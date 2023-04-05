@@ -1,6 +1,6 @@
 <script lang="ts">
   import eugenio from '#/lib/images/eugenio.png';
-  import OutlineIcons from './heroicons/OutlineIcons.svelte';
+  import OutlineIcons from '#/lib/heroicons/OutlineIcons.svelte';
   import { onMount } from 'svelte';
   import { createMenu } from 'svelte-headlessui';
   import { fly } from 'svelte/transition';

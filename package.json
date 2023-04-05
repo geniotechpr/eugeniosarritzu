@@ -36,6 +36,7 @@
 		"tslib": "^2.5.0",
 		"typescript": "^4.9.5",
 		"vite": "^4.2.1",
+		"vite-imagetools": "^4.0.18",
 		"vitest": "^0.25.8"
 	},
 	"type": "module",
