@@ -25,7 +25,7 @@
   });
 </script>
 
-<PageTransition key={data.url} duration={200}>
+<PageTransition key={data.url} duration={10}>
   <!-- Set main container area and its background color. This is the lowest in the stack (z-index) -->
   <div class="fixed inset-0 -z-50 flex justify-center sm:px-8">
     <div class="flex w-full max-w-7xl lg:px-8">
