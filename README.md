@@ -9,7 +9,7 @@ In early 2023, I decided to learn about the technologies below to build my perso
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 - **Deployment**: [Vercel](https://vercel.com)
 
-## Inspiration, Component Library & Learning Resource
+## Inspiration, Component Library & Learning Resources
 
 The following websites below served as inspiration to create my own.
 
