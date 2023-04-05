@@ -72,8 +72,7 @@
       tick: (t: number) => {
         const i = Math.trunc(text.length * t);
         node.textContent = text.slice(0, i);
-      },
-      stop
+      }
     };
   }
 
