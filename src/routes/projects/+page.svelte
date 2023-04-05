@@ -45,7 +45,7 @@
           <li>1. <span class="font-medium underline">This site</span>: continue developing my personal site & begin writing online in a blog format.</li>
           <li>2. <span class="font-medium underline">ChatCV</span>: chat with my resume & CV in a ChatGPT-type interface.</li>
           <li>
-            3. <span class="font-medium underline">Personal Assistant</span>: create a GPT-4 based personal assistant that has up to date information about my
+            3. <span class="font-medium underline">ProjectAssist</span>: create a GPT-4 based personal assistant that has up to date information about my
             technology stack of choice (e.g. Svelte, SvelteKit, TailwindCSS, ,TypeScript, etc.) to help me build side projects faster.
           </li>
           <li>

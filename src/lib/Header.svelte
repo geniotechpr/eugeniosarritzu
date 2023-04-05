@@ -138,8 +138,8 @@
       <div class="fixed inset-0 z-10 w-screen bg-zinc-800/40 backdrop-blur dark:bg-black/60" aria-hidden="true" />
       <div
         use:menu.items
-        in:fly={{ duration: 400, x: 0, y: 50, opacity: 0.5, easing: quintOut }}
-        out:fly={{ duration: 300, x: 0, y: 50, opacity: 0.5, easing: quintIn }}
+        in:fly={{ duration: 200, x: 0, y: 50, opacity: 0.5, easing: quintOut }}
+        out:fly={{ duration: 200, x: 0, y: 50, opacity: 0.5, easing: quintIn }}
         class="fixed inset-x-3 top-6 z-20 origin-top rounded-2xl bg-white px-6 pb-6 pt-12 text-base font-medium text-zinc-800 ring-1 ring-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:ring-zinc-500/20 xs:hidden"
         tabindex="-1"
       >
@@ -147,22 +147,22 @@
           <div class="absolute right-2 top-2">
             <button
               type="button"
-              aria-label="Toggle dark mode"
+              aria-label="Toggle close"
               class="group rounded-full bg-white/90 px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition hover:ring-zinc-200 dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
               on:click={menu.close}
             >
-              <OutlineIcons icon="x-mark" classValue="h-4 w-4 fill-none stroke-zinc-500 transition dark:stroke-zinc-500" />
+              <OutlineIcons icon="x-mark" classValue="h-6 w-6 fill-none stroke-zinc-500 transition dark:stroke-zinc-500" />
             </button>
           </div>
-          <div class="absolute right-2 top-12">
+          <div class="absolute right-2 top-14">
             <button
               type="button"
               aria-label="Toggle dark mode"
               class="group rounded-full bg-white/90 px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition hover:ring-zinc-200 dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
               on:click={toggleDarkMode}
             >
-              <OutlineIcons icon="light-theme-icon" classValue="h-4 w-4 fill-none stroke-zinc-500 transition dark:hidden" />
-              <OutlineIcons icon="dark-theme-icon" classValue="hidden h-4 w-4 fill-zinc-700 stroke-zinc-500 transition dark:block" />
+              <OutlineIcons icon="light-theme-icon" classValue="h-6 w-6 fill-none stroke-zinc-500 transition dark:hidden" />
+              <OutlineIcons icon="dark-theme-icon" classValue="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block" />
             </button>
           </div>
           <div class="space-y-4">

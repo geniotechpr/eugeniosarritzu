@@ -88,6 +88,10 @@
   });
 </script>
 
+{#if !isComponentLoaded}
+  <div>...Loading</div>
+{/if}
+
 {#key isComponentLoaded}
   <div class="flex justify-center" in:fly={{ delay: 150, duration: 200, x: 0, y: 50, opacity: 0, easing: sineIn }} on:introstart={makeHelloTextVisible}>
     <div class="flex flex-col justify-center">
