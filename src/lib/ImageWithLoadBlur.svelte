@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { afterNavigate } from '$app/navigation';
   import { fade } from 'svelte/transition';
 
   // Reduced image size for faster load - this will be blurred by CSS
@@ -23,10 +22,6 @@
   // On Component Mount, set up animations and return cleanup function for unmount
   onMount(() => {
     isComponentLoaded = true;
-  });
-
-  afterNavigate(() => {
-    isLoadingBlurVisible = false;
   });
 </script>
 

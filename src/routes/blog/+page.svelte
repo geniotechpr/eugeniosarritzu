@@ -31,17 +31,16 @@
         Soon, this will be a place where I share my perspective on things I've learned. In the meantime, it's just another chance to show off my domesticated
         fox.
       </span>
+      <!--
       <ImageWithLoadBlur
         alt="Reina & me working hard."
         smallImage={reinaMemeSmall}
         originalImage={reinaMeme}
         imageClass="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]"
-      />
-      <!--
+      /> -->
       <div class="flex w-full justify-center">
         <img alt="Reina & me." src={reinaMeme} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
       </div>
-      -->
       <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">This is a real domesticated fox</span>
       <span class="mb-1.5 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         Here are some topics I want to write about:

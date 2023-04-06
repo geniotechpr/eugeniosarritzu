@@ -30,16 +30,16 @@
       <span class="mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300"
         >As I build and ship projects, I will link them in this page. In the meantime, here's a live look at how I'm spending my nights and weekends.
       </span>
+      <!--
       <ImageWithLoadBlur
         alt="Reina & me working hard."
         smallImage={eugenioReinaSmall}
         originalImage={eugenioReina}
         imageClass="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]"
-      />
-      <!--
+      /> -->
       <div class="flex w-full justify-center blur-md">
         <img alt="Reina & me working hard." src={eugenioReina} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
-      </div> -->
+      </div>
       <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">Working hard with my secret assistant</span>
       <span class="mx-auto mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         As many others who follow the technology industry, I am amazed by the modern wave of Artificial Intelligence. Since October 2022, I've spent countless
