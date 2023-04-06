@@ -37,7 +37,7 @@
         originalImage={eugenioReina}
         imageClass="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]"
       /> -->
-      <div class="flex w-full justify-center blur-md">
+      <div class="flex w-full justify-center">
         <img alt="Reina & me working hard." src={eugenioReina} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
       </div>
       <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">Working hard with my secret assistant</span>
