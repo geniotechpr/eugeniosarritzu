@@ -34,6 +34,7 @@ Last but not least, these learning resources were of great help while building t
 There are still a few things I want to do with this website:
 
 - [ ] Add a global `404` page
+- [ ] Add more sophisticated optimization and loading state for images (for example, blurred initial image while the original one is finished loading, with a smooth transition)
 - [ ] Implement my /blog with MDX or Sanity.io
 - [ ] Update the /projects page after shipping my first side projects in 2023.
 - [ ] Add [Vercel Analytics](https://vercel.com/analytics) as a learning exercise
