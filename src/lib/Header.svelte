@@ -88,6 +88,7 @@
   <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
   <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
   <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
+  <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
   <script>
     if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
@@ -166,7 +167,7 @@
                 <OutlineIcons icon="x-mark" classValue="h-6 w-6 fill-none stroke-zinc-500 transition dark:stroke-zinc-500" />
               </button>
             </div>
-            <div class="absolute right-2 top-14">
+            <div class="absolute right-2 top-16">
               <button
                 type="button"
                 aria-label="Toggle dark mode"
