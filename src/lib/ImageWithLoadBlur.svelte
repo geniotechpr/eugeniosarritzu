@@ -13,20 +13,26 @@
 
   //Component animation on load
   let isComponentLoaded = false;
+  let isLoadingBlurVisible = true;
+
+  function makeLoadingBlurInvisible() {
+    isLoadingBlurVisible = false;
+  }
+
   // On Component Mount, set up animations and return cleanup function for unmount
   onMount(() => {
     isComponentLoaded = true;
   });
 </script>
 
-{#if !isComponentLoaded}
+{#if isLoadingBlurVisible}
   <div class="flex w-full justify-center blur-md">
     <img {alt} src={smallImage} decoding="async" loading="lazy" class={imageClass} />
   </div>
 {/if}
 
 {#key isComponentLoaded}
-  <div class="flex w-full justify-center" in:fade={{ delay: 0, duration: 200 }}>
+  <div class="flex w-full justify-center" in:fade={{ delay: 0, duration: 200 }} on:introstart={makeLoadingBlurInvisible}>
     <img {alt} src={originalImage} decoding="async" loading="lazy" class={imageClass} />
   </div>
 {/key}
