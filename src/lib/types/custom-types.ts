@@ -23,6 +23,7 @@ export interface Preview {
   imgSource: string;
   title: string;
   description: string;
+  labelText: string;
   labelClass: string;
 }
 
