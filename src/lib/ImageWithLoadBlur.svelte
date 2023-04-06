@@ -16,7 +16,7 @@
   let isLoadingBlurVisible = true;
 
   function makeLoadingBlurInvisible() {
-    isLoadingBlurVisible = false;
+    isLoadingBlurVisible = true;
   }
 
   // On Component Mount, set up animations and return cleanup function for unmount
