@@ -1,7 +1,6 @@
 <script lang="ts">
   import * as Threlte from '@threlte/core';
   import * as Three from 'three';
-  import imageForMap from '#/lib/images/eu-reina-home.png';
   import { onMount } from 'svelte';
   import { useTexture } from '@threlte/core';
   import { scale } from 'svelte/transition';
@@ -10,6 +9,7 @@
   let isComponentLoaded = false;
 
   // Build texture, material, and geometry
+  const imageForMap = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738132/eugeniosarritzu.com/eu-reina-home_e102zc.png';
   const map = useTexture(imageForMap);
   const material = new Three.MeshStandardMaterial({
     map: map,

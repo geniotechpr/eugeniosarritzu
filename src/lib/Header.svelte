@@ -1,11 +1,12 @@
 <script lang="ts">
-  import eugenio from '#/lib/images/eugenio.png';
   import OutlineIcons from '#/lib/heroicons/OutlineIcons.svelte';
   import { onMount } from 'svelte';
   import { createMenu } from 'svelte-headlessui';
   import { fly } from 'svelte/transition';
   import { quintOut, quintIn } from 'svelte/easing';
   import type { Route } from '#/lib/types/custom-types';
+
+  const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738143/eugeniosarritzu.com/eugenio_psvxke.png';
 
   // Define routes for navigation menu
   const routes: Route[] = [
@@ -76,6 +77,8 @@
 </script>
 
 <svelte:head>
+  <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
+  <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
   <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC: flash of unstyled content) -->
   <script>
     if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

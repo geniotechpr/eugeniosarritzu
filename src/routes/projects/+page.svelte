@@ -1,9 +1,10 @@
 <script lang="ts">
-  import eugenioReina from '#/lib/images/eu-reina-laptop.png';
-  import eugenio from '#/lib/images/eugenio.png';
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
+
+  const eugenioReina = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738134/eugeniosarritzu.com/eu-reina-laptop_fo39vp.png';
+  const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
 
   let isPageLoaded = false;
   onMount(() => {
@@ -22,14 +23,14 @@
 {#key isPageLoaded}
   <div class="relative flex w-full" in:fly={{ delay: 150, duration: 200, x: 0, y: 50, opacity: 0, easing: sineIn }}>
     <div class="flex flex-col">
-      <h1 class="mx-auto mt-2 mb-6 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-300 xs:mt-4 md:text-3xl">Projects</h1>
+      <h1 class="mx-auto mb-6 mt-2 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-300 xs:mt-4 md:text-3xl">Projects</h1>
       <span class="mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300"
         >As I build and ship projects, I will link them in this page. In the meantime, here's a live look at how I'm spending my nights and weekends.
       </span>
       <div class="flex w-full justify-center">
         <img alt="Reina & me working hard." src={eugenioReina} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
       </div>
-      <span class="mx-auto mb-6 !mt-3 text-sm text-gray-500 dark:text-zinc-400">Working hard with my secret assistant</span>
+      <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">Working hard with my secret assistant</span>
       <span class="mx-auto mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         As many others who follow the technology industry, I am amazed by the modern wave of Artificial Intelligence. Since October 2022, I've spent countless
         hours on Twitter and YouTube learning about topics that spark my interests in the incredible world of AI.

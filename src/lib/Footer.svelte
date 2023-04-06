@@ -1,7 +1,8 @@
 <script lang="ts">
-  import eugenio from '#/lib/images/eugenio.png';
   import SocialMediaLogos from '#/lib/logos/SocialMediaLogos.svelte';
   import type { Social } from '#/lib/types/custom-types';
+
+  const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738143/eugeniosarritzu.com/eugenio_psvxke.png';
 
   const socials: Social[] = [
     {

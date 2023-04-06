@@ -1,7 +1,8 @@
 <script>
   import HomeHeader from '#/lib/HomeHeader.svelte';
   import HomePreview from '#/lib/HomePreview.svelte';
-  import eugenio from '#/lib/images/eugenio.png';
+
+  const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
 </script>
 
 <svelte:head>

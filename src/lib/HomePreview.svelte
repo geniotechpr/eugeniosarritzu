@@ -2,9 +2,6 @@
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
-  import blogPreview from '#/lib/images/blog-preview.jpg';
-  import chatGPT from '#/lib/images/chatGPT.jpg';
-  import puertorico from '#/lib/images/puertorico.jpg';
   import type { Preview } from '#/lib/types/custom-types';
 
   //Component animation on load
@@ -13,19 +10,19 @@
   // Generate a list of previews
   const previews: Preview[] = [
     {
-      imgSource: chatGPT,
+      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738100/eugeniosarritzu.com/chatGPT_bsudmx.jpg',
       title: 'ChatCV',
       description: 'Chat with my resume & CV in a ChatGPT-type interface.',
       labelClass: 'absolute bottom-0 left-0 rounded-md bg-pink-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
     },
     {
-      imgSource: blogPreview,
+      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738098/eugeniosarritzu.com/blog-preview_jyk4ol.jpg',
       title: 'ProjectAssist',
       description: 'Provide Docs to GPT-4 to build side projects faster.',
       labelClass: 'absolute bottom-0 left-0 rounded-md bg-indigo-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
     },
     {
-      imgSource: puertorico,
+      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738151/eugeniosarritzu.com/puertorico_pr6exp.jpg',
       title: 'puertorico.ai',
       description: 'Explore Puerto Rico using modern AI models.',
       labelClass: 'absolute bottom-0 left-0 rounded-md bg-amber-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'

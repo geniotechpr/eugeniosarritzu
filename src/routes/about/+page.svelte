@@ -2,12 +2,13 @@
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
-  import euMadre from '#/lib/images/eu-mami.jpg';
-  import eugenio from '#/lib/images/eugenio.png';
   import Testimonial from '#/lib/Testimonial.svelte';
   import Timeline from '#/lib/Timeline.svelte';
-  import euPortrait from '#/lib/images/eu-portrait.png';
   import type { TimelineBlock } from '#/lib/types/custom-types';
+
+  const euPortrait = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738115/eugeniosarritzu.com/eu-portrait_qxgzva.png';
+  const euMadre = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738102/eugeniosarritzu.com/eu-mami_iannhc.jpg';
+  const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
 
   const careerBlocks: TimelineBlock[] = [
     {
@@ -59,7 +60,7 @@
 {#key isPageLoaded}
   <div class="relative flex w-full" in:fly={{ delay: 150, duration: 200, x: 0, y: 50, opacity: 0, easing: sineIn }}>
     <div class="flex flex-col">
-      <h1 class="mx-auto mt-2 mb-6 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-300 xs:mt-4 md:text-3xl">About</h1>
+      <h1 class="mx-auto mb-6 mt-2 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-300 xs:mt-4 md:text-3xl">About</h1>
       <span class="mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         Hey! Thanks for checking out this page — my personal home on the internet. I'm a technical solutions consultant & full-stack software developer with a
         deep interest in people and technology. I'm currently based in Raleigh, NC but I was born and raised in Puerto Rico, where I also spend some of my time
@@ -71,7 +72,7 @@
       <div class="flex w-full justify-center">
         <img alt="A portrait of myself" src={euPortrait} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
       </div>
-      <span class="mx-auto mb-6 !mt-3 text-sm text-gray-500 dark:text-zinc-400">Portrait from when I visited Las Vegas</span>
+      <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">Portrait from when I visited Las Vegas</span>
       <span class="text-leftt mb-6 flex text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-300">Context</span>
       <span class="mb-8 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         I have purposely tried different kinds of work to find what I enjoy doing the most. Today, as a solutions consultant & engineer I feel like I've found
