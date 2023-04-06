@@ -8,8 +8,8 @@
   import type { TimelineBlock } from '#/lib/types/custom-types';
 
   const euPortraitSmall =
-    'https://res.cloudinary.com/dwfeklncf/image/upload/w_5,c_scale,q_auto,f_auto,fl_lossy/v1680738115/eugeniosarritzu.com/eu-portrait_qxgzva.png';
-  const euPortrait = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738115/eugeniosarritzu.com/eu-portrait_qxgzva.png';
+    'https://res.cloudinary.com/dwfeklncf/image/upload/w_5,c_scale,q_auto,f_auto,fl_lossy/v1680812838/eugeniosarritzu.com/eu-portrait_equyab.png';
+  const euPortrait = 'https://res.cloudinary.com/dwfeklncf/image/upload/v1680812838/eugeniosarritzu.com/eu-portrait_equyab.png';
   const euMadre = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738102/eugeniosarritzu.com/eu-mami_iannhc.jpg';
   const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
 
@@ -69,16 +69,17 @@
         deep interest in people and technology. I'm currently based in Raleigh, NC but I was born and raised in Puerto Rico, where I also spend some of my time
         every year.
       </span>
-      <!--
       <ImageWithLoadBlur
         alt="Reina & me working hard."
         smallImage={euPortraitSmall}
         originalImage={euPortrait}
-        imageClass="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]"
-      /> -->
+        imageContainerSize="h-64 w-64 xs:h-72 xs:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 xl:h-[28rem] xl:w-[28rem]"
+        imageClass="w-full rounded-xl opacity-100"
+      />
+      <!--
       <div class="flex w-full justify-center">
         <img alt="A portrait of myself" src={euPortrait} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
-      </div>
+      </div> -->
       <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">Portrait from when I visited Las Vegas</span>
       <span class="mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         I'm passionate about using technology to solve problems and improve quality of life. I specialize in building Proof of Concept (PoC) and Minimum Viable

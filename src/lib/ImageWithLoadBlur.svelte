@@ -8,7 +8,9 @@
   export let originalImage: string;
   // Image alt text
   export let alt: string;
-  // Class to apply to image - size is set here
+  // Class to apply to image container
+  export let imageContainerSize: string;
+  // Class to apply to image
   export let imageClass: string;
 
   //Component animation on load
@@ -25,14 +27,16 @@
   });
 </script>
 
-{#if isLoadingBlurVisible}
-  <div class="flex w-full justify-center blur-md">
-    <img {alt} src={smallImage} decoding="async" loading="lazy" class={imageClass} />
-  </div>
-{/if}
+<div class="flex w-full justify-center">
+  <div class={'relative ' + imageContainerSize}>
+    <div class="absolute inset-x-0 top-0 blur-sm">
+      <img {alt} src={smallImage} decoding="async" class={imageClass} />
+    </div>
 
-{#key isComponentLoaded}
-  <div class="flex w-full justify-center" in:fade={{ delay: 0, duration: 200 }} on:introstart={makeLoadingBlurInvisible}>
-    <img {alt} src={originalImage} decoding="async" loading="lazy" class={imageClass} />
+    {#key isComponentLoaded}
+      <div class="absolute inset-x-0 top-0" in:fade={{ delay: 0, duration: 200 }} on:introstart={makeLoadingBlurInvisible}>
+        <img {alt} src={originalImage} decoding="async" loading="lazy" class={imageClass} />
+      </div>
+    {/key}
   </div>
-{/key}
+</div>

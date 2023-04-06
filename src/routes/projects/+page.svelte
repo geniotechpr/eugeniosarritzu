@@ -6,7 +6,7 @@
 
   const eugenioReina = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738134/eugeniosarritzu.com/eu-reina-laptop_fo39vp.png';
   const eugenioReinaSmall =
-    'https://res.cloudinary.com/dwfeklncf/image/upload/w_5,c_scale,q_auto,f_auto,fl_lossy/v1680738134/eugeniosarritzu.com/eu-reina-laptop_fo39vp.png';
+    'https://res.cloudinary.com/dwfeklncf/image/upload/w_3,q_auto,f_auto,fl_lossy/v1680738134/eugeniosarritzu.com/eu-reina-laptop_fo39vp.png';
   const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
 
   let isPageLoaded = false;
@@ -30,17 +30,18 @@
       <span class="mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300"
         >As I build and ship projects, I will link them in this page. In the meantime, here's a live look at how I'm spending my nights and weekends.
       </span>
-      <!--
       <ImageWithLoadBlur
         alt="Reina & me working hard."
         smallImage={eugenioReinaSmall}
         originalImage={eugenioReina}
-        imageClass="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]"
-      /> -->
+        imageContainerSize="h-[21rem] w-64 xs:h-96 xs:w-72 md:h-[27rem] md:w-80 lg:h-[32rem] lg:w-96 xl:h-[36rem] xl:w-[27rem]"
+        imageClass="w-full rounded-xl opacity-100"
+      />
+      <!--
       <div class="flex w-full justify-center">
         <img alt="Reina & me working hard." src={eugenioReina} decoding="async" class="h-auto w-[80vw] rounded-xl opacity-100 xs:w-[60vw] xl:w-[40vw]" />
-      </div>
-      <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">Working hard with my secret assistant</span>
+      </div> -->
+      <span class="mx-auto !mt-4 mb-6 text-sm text-gray-500 dark:text-zinc-400 xs:!mt-3">Working hard with my secret assistant</span>
       <span class="mx-auto mb-6 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
         As many others who follow the technology industry, I am amazed by the modern wave of Artificial Intelligence. Since October 2022, I've spent countless
         hours on Twitter and YouTube learning about topics that spark my interests in the incredible world of AI.
