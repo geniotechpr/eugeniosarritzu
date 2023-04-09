@@ -3,11 +3,32 @@
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
   import ImageWithLoadBlur from '#/lib/ImageWithLoadBlur.svelte';
+  import type { Project } from '#/lib/types/custom-types';
 
   const eugenioReina = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738134/eugeniosarritzu.com/eu-reina-laptop_fo39vp.png';
   const eugenioReinaSmall =
     'https://res.cloudinary.com/dwfeklncf/image/upload/w_3,q_auto,f_auto,fl_lossy/v1680738134/eugeniosarritzu.com/eu-reina-laptop_fo39vp.png';
   const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
+
+  const projects: Project[] = [
+    {
+      title: 'This site',
+      description: ': continue developing my personal site & begin writing online in a blog format.'
+    },
+    {
+      title: 'EuAssist',
+      description:
+        ': create a GPT-4 based personal assistant that has up to date information about things I care about (e.g. Svelte, SvelteKit, TailwindCSS, TypeScript, etc.) to help me build side projects faster.'
+    },
+    {
+      title: 'PuertoRico.ai',
+      description: ': allow people to explore the culture, history, and places of our incredible island using text-to-image and large language models.'
+    },
+    {
+      title: 'Teaching',
+      description: ': develop ways to help others learn.'
+    }
+  ];
 
   let isPageLoaded = false;
   onMount(() => {
@@ -52,19 +73,11 @@
         </span>
       </div>
       <span class="mb-1.5 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
-        Here are some of the ideas I want to turn into reality this year:
-        <ul>
-          <li>1. <span class="font-medium underline">This site</span>: continue developing my personal site & begin writing online in a blog format.</li>
-          <li>2. <span class="font-medium underline">ChatCV</span>: chat with my resume & CV in a ChatGPT-type interface.</li>
-          <li>
-            3. <span class="font-medium underline">ProjectAssist</span>: create a GPT-4 based personal assistant that has up to date information about my
-            technology stack of choice (e.g. Svelte, SvelteKit, TailwindCSS, ,TypeScript, etc.) to help me build side projects faster.
-          </li>
-          <li>
-            4. <span class="font-medium underline">PuertoRico.ai</span>: allow people to explore the culture, history, and places of our incredible island using
-            text-to-image and large language models.
-          </li>
-          <li>5. <span class="font-medium underline">Teaching</span>: develop ways to help others learn.</li>
+        <p class="pb-3">Here are some of the ideas I want to turn into reality this year:</p>
+        <ul class="list-inside list-decimal">
+          {#each projects as project}
+            <li class="mb-1"><span class="font-medium underline">{project.title}</span>{project.description}</li>
+          {/each}
         </ul>
       </span>
     </div>

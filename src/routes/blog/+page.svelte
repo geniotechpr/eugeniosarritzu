@@ -3,11 +3,35 @@
   import { fly } from 'svelte/transition';
   import { sineIn } from 'svelte/easing';
   import ImageWithLoadBlur from '#/lib/ImageWithLoadBlur.svelte';
+  import type { Blog } from '#/lib/types/custom-types';
 
   const reinaMeme = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738124/eugeniosarritzu.com/eu-reina-blog_rr49xl.png';
   const reinaMemeSmall =
     'https://res.cloudinary.com/dwfeklncf/image/upload/w_5,c_scale,q_auto,f_auto,fl_lossy/v1680738124/eugeniosarritzu.com/eu-reina-blog_rr49xl.png';
   const eugenio = 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738148/eugeniosarritzu.com/euSquare_yrlclj.png';
+
+  const posts: Blog[] = [
+    {
+      title: 'My journey in tech',
+      description: ': a recap of my career and lessons learned.'
+    },
+    {
+      title: 'Consuming vs. Creating',
+      description: ': spending less time online consuming and pushing myself to make things.'
+    },
+    {
+      title: 'Overthinking, Overplanning, & Imposter Syndrome',
+      description: ': how simple things can be hard.'
+    },
+    {
+      title: 'Artificial Intelligence',
+      description: ": what I've learned so far from others and from experiments of my own."
+    },
+    {
+      title: 'Current Tech Stack',
+      description: ': the technologies I chose to learn to build this site + other projects.'
+    }
+  ];
 
   let isPageLoaded = false;
   onMount(() => {
@@ -44,17 +68,11 @@
       </div> -->
       <span class="mx-auto !mt-3 mb-6 text-sm text-gray-500 dark:text-zinc-400">This is a real domesticated fox</span>
       <span class="mb-1.5 text-left text-base font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
-        Here are some topics I want to write about:
-        <ul>
-          <li>1. <span class="font-medium underline">My journey in tech</span>: a recap of my career and lessons learned.</li>
-          <li>
-            2. <span class="font-medium underline">Consuming vs. Creating</span>: spending less time online consuming and pushing myself to make things.
-          </li>
-          <li>
-            3. <span class="font-medium underline">Overthinking, Overplanning, & Imposter Syndrome</span>: how simple things can be hard.
-          </li>
-          <li>4. <span class="font-medium underline">Artificial Intelligence</span>: what I've learned so far from others and from experiments of my own.</li>
-          <li>5. <span class="font-medium underline">Current Tech Stack</span>: the technologies I chose to learn to build this site + other projects.</li>
+        <p class="pb-3">Here are some topics I want to write about:</p>
+        <ul class="list-inside list-decimal">
+          {#each posts as post}
+            <li class="mb-1"><span class="font-medium underline">{post.title}</span>{post.description}</li>
+          {/each}
         </ul>
       </span>
     </div>

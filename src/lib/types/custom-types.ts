@@ -33,3 +33,15 @@ export interface TimelineBlock {
   title: string;
   description: string;
 }
+
+// Project for Projects page
+export interface Project {
+  title: string;
+  description: string;
+}
+
+// Project for Projects page
+export interface Blog {
+  title: string;
+  description: string;
+}

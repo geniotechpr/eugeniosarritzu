@@ -10,16 +10,16 @@
   // Generate a list of previews
   const previews: Preview[] = [
     {
-      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738100/eugeniosarritzu.com/chatGPT_bsudmx.jpg',
-      title: 'ChatCV',
-      description: 'Chat with my resume & CV in a ChatGPT-type interface.',
+      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738098/eugeniosarritzu.com/blog-preview_jyk4ol.jpg',
+      title: 'Blog',
+      description: "A place to write about things I've learned.",
       labelText: 'Coming Soon',
       labelClass: 'absolute bottom-0 left-0 rounded-md bg-pink-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
     },
     {
-      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738098/eugeniosarritzu.com/blog-preview_jyk4ol.jpg',
-      title: 'ProjectAssist',
-      description: 'Provide Docs to GPT-4 to build side projects faster.',
+      imgSource: 'https://res.cloudinary.com/dwfeklncf/image/upload/q_auto,f_auto,fl_lossy/v1680738100/eugeniosarritzu.com/chatGPT_bsudmx.jpg',
+      title: 'EuAssist',
+      description: 'GPT-4 based assistant to build side projects faster.',
       labelText: 'Coming Soon',
       labelClass: 'absolute bottom-0 left-0 rounded-md bg-indigo-600 px-1.5 py-1.5 text-xs font-medium text-white shadow-sm'
     },
