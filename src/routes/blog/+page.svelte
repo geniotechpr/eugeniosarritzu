@@ -20,7 +20,7 @@
       description: ': spending less time online consuming and pushing myself to make things.'
     },
     {
-      title: 'Overthinking, Overplanning, & Imposter Syndrome',
+      title: 'Overthinking & Overplanning',
       description: ': how simple things can be hard.'
     },
     {
