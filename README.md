@@ -1,6 +1,4 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgeniotechpr%2Feugeniosarritzu.com)
-
-# eugeniosarritzu.com
+# Personal Website Experiment
 
 In early 2023, I decided to learn about the technologies below to build my personal website. I also learned about Vercel and the great developer experience it provides to make all these technologies come together into something easily sharable with the world.
 
